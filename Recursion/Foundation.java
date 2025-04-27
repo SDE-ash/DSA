@@ -2,6 +2,17 @@ package Recursion;
 
 public class Foundation {
 
+    public static void printNum(int num){
+        if(num ==0){
+            return;
+        }
+
+        printNum(num-1);
+        System.err.println(num);
+
+
+    }
+
     public static String printNameNTimes(String name, int times){
 
         if(times ==1){
@@ -19,7 +30,11 @@ public class Foundation {
 
         System.out.println("hello world");
 
-        System.err.println(printNameNTimes("akash", 5));
+        // System.err.println(printNameNTimes("akash", 5));
+
+
         // Your code herestatic
+
+        printNum(5);
     }
 }
