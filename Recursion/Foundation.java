@@ -2,6 +2,17 @@ package Recursion;
 
 public class Foundation {
 
+    public static void oppNum(int num){
+        if(num ==1){
+            System.err.println(num);
+            return;
+        }
+
+        // main work
+        System.err.println(num);
+        oppNum(num-1);
+    }
+
     public static void printNum(int num){
         if(num ==0){
             return;
@@ -35,6 +46,8 @@ public class Foundation {
 
         // Your code herestatic
 
-        printNum(5);
+        //printNum(5);
+
+        oppNum(8);
     }
 }
