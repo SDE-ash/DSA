@@ -2,6 +2,19 @@ package Recursion;
 
 public class Foundation {
 
+    public static int meanOfArray(int arr[], int ptr, int sum){
+        if(ptr == arr.length){
+            return sum/arr.length;
+        }
+
+        //main kam
+
+        return meanOfArray(arr, ptr+1, sum+=arr[ptr]);
+        
+
+
+    }
+
     public static void oppNum(int num){
         if(num ==1){
             System.err.println(num);
@@ -48,6 +61,8 @@ public class Foundation {
 
         //printNum(5);
 
-        oppNum(8);
+        //oppNum(8);
+        int arr[] = {1, 2, 3, 4, 5};
+        System.err.println(meanOfArray(arr, 0, 0));
     }
 }
